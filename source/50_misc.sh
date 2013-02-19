@@ -19,3 +19,9 @@ function titlebar() {
 if [[ -e ~/.ssh/known_hosts ]]; then
   complete -o default -W "$(cat ~/.ssh/known_hosts | sed 's/[, ].*//' | sort | uniq | grep -v '[0-9]')" ssh scp stfp
 fi
+
+# git autocomplete
+source /etc/bash_completion.d/git
+
+# ekg alias
+alias 'gg'='(export LANG=pl_PL.ISO-8859-2 && tmux new-session ekg)'

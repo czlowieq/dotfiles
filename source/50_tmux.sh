@@ -6,5 +6,4 @@ fi
 
 alias 'tmux-a'='tmux -2 attach'
 alias 'tmux'='tmux -2'
-alias 'gg'='(export LANG=pl_PL.ISO-8859-2 && tmux new-session ekg)'
 
